@@ -170,6 +170,8 @@ div#publicidad {
 /*5. El logotipo del sitio se muestra mediante una imagen de fondo del elemento <h1> contenido en el elemento #cabecera (la imagen se llama logo.gif)*/
 
 #cabecera h1{
-    background-image: url(logo.gif) ;
-    padding: .5em
+    background-image: url(imaxes/logo.gif) ;
+    padding:.8em;
+    padding-right: 5.5em;
+    background-repeat: no-repeat;
 }
