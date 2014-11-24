@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+ <html>
+ <head>
+ 	<title>Formulario con post</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+	<form action= "form-post.html" method="POST">
+		<fieldset id="personal">
+			<legend>Información Personal</legend>
+			<label for="apelidos">Apelidos:</label>
+				<input name="apelidos" id="apelidos" type="text"/>
+			<br/>
+			<label for="nome">Nome:</label>
+				<input name="nome" id="nome" type="text"/>
+			<br/>
+			<label for="direccion">Dirección:</label>
+				<input name="direccion" id="direccion" type="text"/>
+			<label for="pass">Password</label>&nbsp;<input type="password" name="pass">
+			<br/>
+			<label for="Hombre">Hombre</label>
+				<input type="radio" name="sex" id="Hombre" value="H">
+			<br>
+			<label for="Mujer">Mujer</label>
+				<input type="radio" name="sex" id="Mujer" value="F">
+			<br/><br/>
+				<input type="checkbox" name="suma">sumar
+			<br>
+			<select>
+				<option value="LMSMI">Linguaxes</option>
+				<option value="BBD">Bases</option>
+				<option value="PROGRAMACION">Prog</option>
+				<option value="CONTORNOS">Entornos</option>
+			</select>
+			<br/><br/>
+				<textarea rows="4" cols="35">Introduce as tuas inquietudes.
+				</textarea>
+			<br/><br/><br/>
+				<input type="submit" name="enviar" value="Enviar">
+		</fieldset>
+	</form>
+</body>
+</html>
