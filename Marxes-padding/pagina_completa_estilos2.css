@@ -190,7 +190,7 @@ body{
     line-heigt:1.4em;
 }
 
-h2.articulo{
+.articulo h2{
     color:#CC6600;
     font-size: 1.6em;
     line-height: 1.2;
@@ -198,9 +198,12 @@ h2.articulo{
 }
 
 
-#menu_principal a{
+#menu ul li{
     margin-right: 1em;
-    color:#FFFFFF;
+}
+
+#menu a{
+        color:#FFFFFF;
     font-size: 1.3em;
 
 }
@@ -218,10 +221,11 @@ h2.articulo{
     color:#003366;
 }
  #noticias p {
+     color:#555555;
  }
 
 #publicidad h3 a{
-    text-decoration-color:
+
     color:#555;
 
 }
