@@ -10,25 +10,42 @@
             body{
                 background-image: url("/imaxesWeb/fondoWeb.png");
             }
+            .mujerFoto{
+                float:left;
+                width:10%;
+                height: 100%;
+            }
+            .hombreFoto{
+                float:right;
+                width:10%;
+                height: 100%;
+            }
+
             header{
-                width:80%;
-                height: 150px;
-                margin-left: 10%;
-                padding-top: 2em;
+                width:60%;
+                height: 100px;
+                margin-top: 5%;
+                margin-left: 15%;
+                padding-top: 1em;
                 text-align: center;
                 background-color: #EEEEED;
             }
+
             nav{
-                width: 100%;
+                width: 60%;
+                height: 100%;
+                margin-left: 15%;
+                float:left;
                 text-align: center;
+                background-color: lightYellow;
             }
 
             section{
-                width: 80%;
-                float: left;
+                width: 60%;
                 height: 400px;
+                float: left;
                 background-color: lightYellow;
-                margin-left: 10%;
+                margin-left: 15%;
             }
 
             /*aside{
@@ -40,8 +57,11 @@
 
             footer{
                 clear: both;
-                width: 100%;
+                margin-top: 20%;
+                margin-left: 15%;
+                width: 60%;
                 background-color: gray;
+                text-align: center;
             }
         </style>
     </head>
@@ -49,21 +69,24 @@
 <body>
     <div>
         <header>
+            <img  class="mujerFoto" src="imaxesWeb/mujerHeader.png" alt="Foto Mujer">
+            <img  class="hombreFoto" src="imaxesWeb/hombreHeader.png" alt="Foto Hombre">
             <h1>PELUQUERIA NOVOSTEMPOS</h1>
+
         </header>
 
         <nav>
-            <p><a href="#">Enlace1</a>|<a href="#">Enlace2</a>|<a href="#">Enlace3</a></p>
+            <p><a href="#">Inicio</a>|<a href="#">Servicios</a>|<a href="#">Tarifas</a>|<a href="#">Galeria</a>|<a href="#">Localización</a>|<a href="#">Contacto</a></p>
         </nav>
 
         <section>
-            <p>Contido principal</p>
+            <h2>Contido principal</h2>
         </section>
 
     </div>
 
     <footer>
-        Pe de paxina- Zona Institucional
+        <adress>Peluqueria Novos Tempos C/Ensinanza,nº 13 - Baixo - Santiago de Compostela - 981570102</adress>
     </footer>
 
 </body>
