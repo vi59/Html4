@@ -8,27 +8,35 @@
         <style>
             /*Declaro el fondo de la pagina*/
             body{
-                background-image: url("/imaxesWeb/fondoWeb.png");
+                background-image: url("imaxesWeb/fondoWeb.png");
+                /*background-color: rgba(255,0,255,0.2);*/
             }
+
+            /*Posicionamiento foto cabecera mujer*/
             .mujerFoto{
                 float:left;
                 width:10%;
                 height: 100%;
             }
+
+            /*Posicionamiento foto cabecera hombre*/
             .hombreFoto{
                 float:right;
                 width:10%;
                 height: 100%;
             }
 
+            /*Posicionamiento header*/
             header{
                 width:60%;
                 height: 100px;
                 margin-top: 5%;
                 margin-left: 15%;
-                padding-top: 1em;
                 text-align: center;
                 background-color: #EEEEED;
+            }
+            header h1 {
+                padding-top: 1em;
             }
 
             nav{
@@ -39,6 +47,11 @@
                 text-align: center;
                 background-color: lightYellow;
             }
+
+            .Inicio,.Servicios,.Galeria,.Tarifas,.Localizacion,.Contacto{
+                padding-right: 1em;
+            }
+
 
             section{
                 width: 60%;
@@ -69,14 +82,14 @@
 <body>
     <div>
         <header>
-            <img  class="mujerFoto" src="imaxesWeb/mujerHeader.png" alt="Foto Mujer">
-            <img  class="hombreFoto" src="imaxesWeb/hombreHeader.png" alt="Foto Hombre">
+            <img class="mujerFoto" src="imaxesWeb/mujerHeader.png" alt="Foto Mujer">
+            <img class="hombreFoto" src="imaxesWeb/hombreHeader.png" alt="Foto Hombre">
             <h1>PELUQUERIA NOVOSTEMPOS</h1>
 
         </header>
 
         <nav>
-            <p><a href="#">Inicio</a>|<a href="#">Servicios</a>|<a href="#">Tarifas</a>|<a href="#">Galeria</a>|<a href="#">Localización</a>|<a href="#">Contacto</a></p>
+            <p><a class="Inicio" href="#">Inicio</a>|<a class="Servicios" href="#">Servicios</a>|<a class="Tarifas" href="#">Tarifas</a>|<a class="Galeria" href="#">Galeria</a>|<a class="Localizacion" href="#">Localización</a>|<a class="Contacto" href="#">Contacto</a></p>
         </nav>
 
         <section>
@@ -86,7 +99,7 @@
     </div>
 
     <footer>
-        <adress>Peluqueria Novos Tempos C/Ensinanza,nº 13 - Baixo - Santiago de Compostela - 981570102</adress>
+        <address>Peluqueria Novos Tempos C/Ensinanza,nº 13 - Baixo - Santiago de Compostela - 981570102</address>
     </footer>
 
 </body>
