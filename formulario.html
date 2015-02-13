@@ -55,12 +55,21 @@
 
             section{
                 width: 60%;
-                height: 400px;
+                /* Isto vai darlle unha altura MINIMA de 400 px, se o contido ocupa mais se redimensiona, se ocupa menos sempre seran 400 px como minimo*/
+                min-height: 400px;
+                /* Por certo, tamén podes poñer ti comentarios */
                 float: left;
                 background-color: lightYellow;
                 margin-left: 15%;
             }
-
+            label{
+                display:block;
+                margin:.5em 0 0 0;
+                overflow: hidden;
+            }
+            .cliente{
+                margin-bottom: 25px;
+            }
             /*aside{
                 width: 30%;
                 float:left;
@@ -75,6 +84,10 @@
                 width: 60%;
                 background-color: gray;
                 text-align: center;
+            }
+
+            #mensajeCliente {
+                vertical-align: top;
             }
         </style>
     </head>
@@ -94,13 +107,19 @@
 
         <section>
             <p>Rellene el siguiente formulario para ponerse en contacto con nosotros.</p>
-            <p>* Recuerde que es obligatorio el campo E-mail.</p>
+            <p><sup>*</sup>Recuerde que es obligatorio el campo E-mail.</p>
             <form action="#" method="post" accept-charset="UTF-8">
                 <label for="nombre">Nombre</label>
-                    <input name="nombre" id="nombre" type="text" size="30"/>
+                <input name="nombre" id="nombre" type="text" size="20" placeholder="Introduze aquí tu nombre..."/>
                 <label for="apellidos">Apellidos</label>
-                    <input name="apellidos" id="apellidos" type="text" size="50"/>
-
+                <input name="apellidos" id="apellidos" type="text" size="60" placeholder="Introduce aquí tus apellidos..."/>
+                <label for="email">Email<sup>*</sup></label>
+                <input name="email" id="email" type="email" size="20"/>
+                <label for="telefono_contacto" type="text">Teléfono de contacto</label>
+                <input name="telefono" id="telefono" type="text" size="50"/><br/>
+                <label class="cliente" for="mensajeCliente" id="mensajeCliente">Mensaje que desea enviar a la empresa</label>
+                <textarea name="mensajeCliente" rows="10" cols="40">Mensaje Cliente</textarea>
+                <input name="enviar" id="enviar" type="submit">
             </form>
         </section>
 
