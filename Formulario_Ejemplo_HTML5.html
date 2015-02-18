@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios</title>
+		<meta charset="utf-8">
+    </head>
+    <body>
+        <section>
+            <form name="miformulario" id="miformulario" method="get">
+                <label>Nome</label><input type="text" name="nombre" id="nombre" autocomplete="on" placeholder="Introduce un nome..." required="required" title="Francisco says...">
+                <br>
+                <!-- Listado 6.2 -->
+                <label>Email</label><input type="email" name="miemail" id="miemail" autocomplete="off">
+                <br>
+                <!-- Listado 6.3 -->
+                <label>Busca</label><input type="search" name="busqueda" id="busqueda" placeholder="Introduce...">
+                <br>
+                <!-- Listado 6.4 -->
+                <label>URL</label><input type="url" name="miurl" id="miurl" autofocus>
+                <br>
+                <!-- Listado 6.5 -->
+                <label>Telefono</label><input type="tel" name="telefono" id="telefono">
+                <br>
+                <!-- Listado 6.6 -->
+                <label>Numero</label><input type="number" name="numero" id="numero" min="50" max="100" step="1">
+                <br>
+                <!-- Listado 6.7 -->
+                <label>Rango</label><input type="range" name="numero" id="numero" min="0" max="10" step="5">
+                <br>
+                <!-- Listado 6.8 -->
+                <label>Data</label><input type="date" name="fecha" id="fecha">
+                <br>
+                <!-- Listado 6.9 -->
+                <label>Semana</label><input type="week" name="semana" id="semana">
+                <br>
+                <!-- Listado 6.10 -->
+                <label>Mes</label><input type="month" name="mes" id="mes">
+                <br>
+                <!-- Listado 6.11 -->
+                <label>Hora</label><input type="time" name="hora" id="hora">
+                <br>
+                <!-- Listado 6.12 -->
+                <label>Data e Hora</label><input type="datetime" name="fechahora" id="fechahora">
+                <br>
+                <!-- Listado 6.13 -->
+                <label>Data e Hora local</label><input type="datetime-local" name="tiempolocal" id="tiempolocal">
+                <br>
+                <!-- Listado 6.14 -->
+                <label>Cor</label><input type="color" name="micolor" id="micolor">
+                <br>
+                <!-- Listado 6.19 -->
+                <label>Codpostal</label><input type="text" pattern="[0-9]{5}" name="codigopostal" id="codigopostal" title="inserte los 5 números de su código postal">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>
