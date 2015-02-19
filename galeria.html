@@ -95,6 +95,7 @@
                 transform: rotate(-10deg);
             }
 
+            /*Establezco a rotación de cada imaxen*/
             ul.galeriaImaxes li img.pic-2 {
                 z-index: 5;
                 transform: rotate(-3deg);
@@ -115,7 +116,11 @@
                 z-index: 6;
                 transform: rotate(-10deg);
             }
-
+            /*Escalo a imaxe a un maior tamaño cando paso o cursor por riba dela e a traio o frente*/
+            ul.galeriaImaxes li img:hover{
+                z-index: 10;
+                transform: scale(1.35);
+            }
 
             /*aside{
                 width: 30%;
