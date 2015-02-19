@@ -108,11 +108,11 @@
                 padding-left: 25px;
                 padding-right: 25px;
             }
-
-            #codigoBidi{
+            /*Posicionamiento relativo para colocar el codigo Bidi*/
+            #imgQr{
                 position:relative;
-                left:600px;
-                border:5px solid;
+                top:150px;
+                right:300px;
             }
 
 /***********Estilos especificos galeria***********************/
