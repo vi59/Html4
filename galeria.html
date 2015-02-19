@@ -5,6 +5,7 @@
     <head>
         <title>Curso: 1DAW-Modular Linguaxes de Marcas e Sistemas de Xestión de Información</title>
         <meta charset="utf-8">
+
         <style>
             /*Declaro el fondo de la pagina*/
             body{
@@ -66,7 +67,55 @@
                 float: left;
                 background-color: lightYellow;
                 margin-left: 15%;
+
             }
+            #contenedor {
+                border:1px solid;
+                /*width: 840px;
+                margin-top: 50px;
+                margin-left:180px;
+                margin-right: 10px;*/
+                overflow: hidden;
+            }
+            ul.galeriaImaxes{
+                list-style: none;
+            }
+
+            ul.galeriaImaxes li img{
+                float:left;
+                padding:10px 10px 25px 10px;
+                background-color: #eee;
+                box-shadow: 0px 2px 15px #333;
+                border:1px solid #000;
+                margin:3px;
+                position:relative;
+            }
+            ul.galeriaImaxes li img.pic-1 {
+                z-index: 1;
+                transform: rotate(-10deg);
+            }
+
+            ul.galeriaImaxes li img.pic-2 {
+                z-index: 5;
+                transform: rotate(-3deg);
+            }
+            ul.galeriaImaxes li img.pic-3 {
+                z-index: 3;
+                transform: rotate(4deg);
+            }
+            ul.galeriaImaxes li img.pic-4 {
+                z-index: 4;
+                transform: rotate(14deg);
+            }
+            ul.galeriaImaxes li img.pic-5 {
+                z-index: 2;
+                transform: rotate(-12deg);
+            }
+            ul.galeriaImaxes li img.pic-6 {
+                z-index: 6;
+                transform: rotate(-10deg);
+            }
+
 
             /*aside{
                 width: 30%;
@@ -96,11 +145,19 @@
         </header>
 
         <nav>
-            <p><a class="Inicio" href="index.html">Inicio</a>|<a class="Servicios" href="#">Servicios</a>|<a class="Tarifas" href="#">Tarifas</a>|<a class="Galeria" href="#">Galeria</a>|<a class="Localizacion" href="#">Localización</a>|<a class="Contacto" href="formulario.html">Contacto</a></p>
+            <p><a class="Inicio" href="index.html">Inicio</a>|<a class="Servicios" href="#">Servicios</a>|<a class="Tarifas" href="#">Tarifas</a>|<a class="Galeria" href="galeria.html">Galeria</a>|<a class="Localizacion" href="#">Localización</a>|<a class="Contacto" href="formulario.html">Contacto</a></p>
         </nav>
 
         <section>
-            <h2>Contido principal</h2>
+            <div id="contenedor">
+                <ul class="galeriaImaxes">
+                    <li><img class="pic-1" src="imaxesWeb/LmujerHeader.png" /></li>
+                    <li><img src="imaxesWeb/Lhombre.png" /></li>
+                    <li><img src="imaxesWeb/LhombreHeader.png" /></li>
+                    <li><img src="imaxesWeb/Mmujer.png" /></li>
+                    <li><img src="imaxesWeb/Mhombre.png" /></li>
+                </ul>
+            </div>
         </section>
 
     </div>
