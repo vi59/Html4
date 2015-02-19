@@ -1,0 +1,172 @@
+/***********Declaro el fondo de la pagina**********************/
+            body{
+                background-image: url("imaxesWeb/fondoWeb.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                /*background-color: rgba(255,0,255,0.2);*/
+            }
+
+            /*Posicionamiento foto cabecera mujer*/
+            .mujerFoto{
+                float:left;
+                width:20%;
+
+                /*height: 100%;*/
+            }
+
+            /*Posicionamiento foto cabecera hombre*/
+            .hombreFoto{
+                float:right;
+                width:14%;
+
+                /*height: 100%;*/
+            }
+
+            /*Posicionamiento header*/
+            header{
+                width:60%;
+                /*height: 100px;*/
+                margin-top: 5%;
+                margin-left: 15%;
+                text-align: center;
+                background-color: #EEEEED;
+                overflow: hidden;
+            }
+            header h1 {
+                padding-top: 2em;
+                padding-bottom: .8em;
+            }
+
+            nav{
+                width: 60%;
+                /*height: 100%;*/
+                margin-left: 15%;
+                float:left;
+                text-align: center;
+                background-color: lightYellow;
+
+            }
+
+            .Inicio,.Servicios,.Galeria,.Tarifas,.Localizacion,.Contacto{
+                padding-right: 1em;
+            }
+
+            section{
+                width: 60%;
+                min-height: 400px;
+                float: left;
+                background-color: lightYellow;
+                margin-left: 15%;
+            }
+
+            /*aside{
+                width: 30%;
+                float:left;
+                height:400px;
+                background-color: lightGreen;
+            }*/
+
+            footer{
+                clear: both;
+                margin-top: 20%;
+                margin-left: 15%;
+                width: 60%;
+                background-color: gray;
+                text-align: center;
+            }
+
+/*************Estilos especificos formulario*************/
+
+
+            section p{
+                margin-left: 15px;
+            }
+
+            form{
+                margin-left: 15px;
+
+            }
+            label{
+                display:block;
+                margin:.5em 0 0 0;
+                overflow: hidden;
+            }
+
+            input{
+                border-radius: 35px;
+            }
+            .cliente{
+                margin-bottom: 25px;
+            }
+
+            #mensajeCliente {
+                vertical-align: top;
+            }
+            #enviar{
+                margin-left: 20px;
+                margin-bottom: 25px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            #codigoBidi{
+                position:relative;
+                left:600px;
+                border:5px solid;
+            }
+
+/***********Estilos especificos galeria***********************/
+
+            #contenedor {
+                border:1px solid;
+                /*width: 840px;
+                margin-top: 50px;
+                margin-left:180px;
+                margin-right: 10px;*/
+                overflow: hidden;
+            }
+            ul.galeriaImaxes{
+                list-style: none;
+            }
+
+            ul.galeriaImaxes li img{
+                float:left;
+                padding:10px 10px 25px 10px;
+                background-color: #eee;
+                box-shadow: 0px 2px 15px #333;
+                border:1px solid #000;
+                margin:3px;
+                position:relative;
+            }
+
+            /*Establezco a rotación de cada imaxe*/
+
+            ul.galeriaImaxes li img.pic-1 {
+                z-index: 1;
+                transform: rotate(-10deg);
+            }
+            ul.galeriaImaxes li img.pic-2 {
+                z-index: 5;
+                transform: rotate(-3deg);
+            }
+            ul.galeriaImaxes li img.pic-3 {
+                z-index: 3;
+                transform: rotate(4deg);
+            }
+            ul.galeriaImaxes li img.pic-4 {
+                z-index: 4;
+                transform: rotate(14deg);
+            }
+            ul.galeriaImaxes li img.pic-5 {
+                z-index: 2;
+                transform: rotate(-12deg);
+            }
+            ul.galeriaImaxes li img.pic-6 {
+                z-index: 6;
+                transform: rotate(-10deg);
+            }
+            /*Escalo a imaxe a un maior tamaño cando paso o cursor por riba dela e a traio o frente*/
+            ul.galeriaImaxes li img:hover{
+                z-index: 10;
+                transform: scale(1.35);
+            }
