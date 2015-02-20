@@ -170,3 +170,21 @@
                 z-index: 10;
                 transform: scale(1.35);
             }
+/***********Estilos especificos tabla***********************/
+
+            #tarifas{
+                margin-left: 15%;
+                width: 500px;
+            }
+
+            table#tablaTarifas{
+                margin-left:  15%;
+                width: 60%;
+            }
+            th.encabezadoTabla{
+                text-align:left;
+            }
+            td.precio{
+                width: 10px;
+                text-align: right;
+            }

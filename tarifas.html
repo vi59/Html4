@@ -5,85 +5,7 @@
     <head>
         <title>Curso: 1DAW-Modular Linguaxes de Marcas e Sistemas de Xestión de Información</title>
         <meta charset="utf-8">
-        <style>
-            /*Declaro el fondo de la pagina*/
-            body{
-                background-image: url("imaxesWeb/fondoWeb.png");
-                background-size: cover;
-                background-repeat: no-repeat;
-                /*background-color: rgba(255,0,255,0.2);*/
-            }
-
-            /*Posicionamiento foto cabecera mujer*/
-            .mujerFoto{
-                float:left;
-                width:20%;
-
-                /*height: 100%;*/
-            }
-
-            /*Posicionamiento foto cabecera hombre*/
-            .hombreFoto{
-                float:right;
-                width:14%;
-
-                /*height: 100%;*/
-            }
-
-            /*Posicionamiento header*/
-            header{
-                width:60%;
-                /*height: 100px;*/
-                margin-top: 5%;
-                margin-left: 15%;
-                text-align: center;
-                background-color: #EEEEED;
-                overflow: hidden;
-            }
-            header h1 {
-                padding-top: 2em;
-                padding-bottom: .8em;
-            }
-
-            nav{
-                width: 60%;
-                /*height: 100%;*/
-                margin-left: 15%;
-                float:left;
-                text-align: center;
-                background-color: lightYellow;
-
-            }
-
-            .Inicio,.Servicios,.Galeria,.Tarifas,.Localizacion,.Contacto{
-                padding-right: 1em;
-            }
-
-
-            section{
-                width: 60%;
-                min-height: 400px;
-                float: left;
-                background-color: lightYellow;
-                margin-left: 15%;
-            }
-
-            /*aside{
-                width: 30%;
-                float:left;
-                height:400px;
-                background-color: lightGreen;
-            }*/
-
-            footer{
-                clear: both;
-                margin-top: 20%;
-                margin-left: 15%;
-                width: 60%;
-                background-color: gray;
-                text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="cssproyectoMarcosVG.css">
     </head>
 
 <body>
@@ -96,11 +18,70 @@
         </header>
 
         <nav>
-            <p><a class="Inicio" href="index.html">Inicio</a>|<a class="Servicios" href="#">Servicios</a>|<a class="Tarifas" href="#">Tarifas</a>|<a class="Galeria" href="galeria.html">Galeria</a>|<a class="Localizacion" href="#">Localización</a>|<a class="Contacto" href="formulario.html">Contacto</a></p>
+            <p><a class="Inicio" href="index.html">Inicio</a>|<a class="Servicios" href="#">Servicios</a>|<a class="Tarifas" href="tarifas.html">Tarifas</a>|<a class="Galeria" href="galeria.html">Galeria</a>|<a class="Localizacion" href="#">Localización</a>|<a class="Contacto" href="formulario.html">Contacto</a></p>
         </nav>
 
         <section>
-            <h2>Contido principal</h2>
+
+            <table id=tablaTarifas >
+            <caption><h2>Tarifas año 2015</h2></caption>
+            <thead>
+              <tr>
+                <th class="encabezadoTabla">Servicio</th>
+                <th class="encabezadoTabla">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Secado (champú especifico/acondicionador)</td>
+                <td class="precio">8 €</td>
+              </tr>
+              <tr>
+                <td>Color y Secar</td>
+                <td class="precio">23 €</td>
+              </tr>
+              <tr>
+                <td>Corte y Secar</td>
+                <td class="precio">17 €</td>
+              </tr>
+              <tr>
+                <td>Mechas aluminio y secar</td>
+                <td class="precio">26 €</td>
+              </tr>
+              <tr>
+                <td>Corte de Caballero </td>
+                <td class="precio">8 €</td>
+              </tr>
+              <tr>
+                <td>Corte señora, desglosado  </td>
+                <td class="precio">9 €</td>
+              </tr>
+              <tr>
+                <td>Novias y Pruebas</td>
+                <td class="precio">Consultar</td>
+              </tr>
+              <tr>
+                <td>Tratamiento constructor Queratina y Secado</td>
+                <td class="precio">29 €</td>
+              </tr>
+              <tr>
+                <td>Aplicación de mascarilla</td>
+                <td class="precio">8 €</td>
+              </tr>
+            </tbody>
+            </table>
+            <br/>
+            <hr/>
+            <details id=tarifas>
+            <summary>
+                "Aclaraciones tarifas publicadas"
+            </summary>
+                <p>
+                Los precios publicados en la web de la peluqueria son en euros y son vigentes salvo error tipográfico.
+                Todos los precios llevan el IVA incluido
+                </p>
+            </details>
+
         </section>
 
     </div>
