@@ -223,3 +223,13 @@
                 transform: scale(2);
             }
 
+/***********Estilos especificos pagina de principal - INDEX.HTML***********************/
+            .inicioPresentacion{
+                margin-left:25%;
+                margin-right: 25%;
+
+            }
+
+            span.negrilla{
+                font-weight: bold;
+            }
