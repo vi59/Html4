@@ -188,3 +188,34 @@
                 width: 10px;
                 text-align: right;
             }
+
+            #localizacionEncabezado{
+                margin-left: 10%;
+            }
+
+            #mapaLocalizacion{
+                width:400px;
+                height: 400px;
+                margin-left: 10%;
+                margin-bottom: 10%;
+            }
+
+            #ubicacion{
+                position: relative;
+                width: 300px;
+                left:500px;
+                bottom: 500px;
+                font-weight: bold;
+            }
+
+            #imagenLocalizacion{
+                margin-top: 40px;
+                margin-left: 15px;
+                width:290px;
+            }
+
+            #imagenLocalizacion:hover{
+                border-radius: 35px;
+                transform: scale(2);
+            }
+
