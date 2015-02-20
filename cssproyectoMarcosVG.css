@@ -189,23 +189,27 @@
                 text-align: right;
             }
 
+/***********Estilos especificos localizacion***********************/
+
             #localizacionEncabezado{
                 margin-left: 10%;
             }
 
             #mapaLocalizacion{
                 width:400px;
-                height: 400px;
+                min-height: 400px;
                 margin-left: 10%;
                 margin-bottom: 10%;
+
             }
 
             #ubicacion{
-                position: relative;
+                position: absolute;
                 width: 300px;
-                left:500px;
-                bottom: 500px;
+                left:50%;
+                bottom: 100px;
                 font-weight: bold;
+
             }
 
             #imagenLocalizacion{
