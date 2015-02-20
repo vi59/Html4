@@ -25,7 +25,7 @@
             /*Posicionamiento header*/
             header{
                 width:60%;
-                /*height: 100px;*/
+                min-width: 850px;
                 margin-top: 5%;
                 margin-left: 15%;
                 text-align: center;
@@ -39,7 +39,7 @@
 
             nav{
                 width: 60%;
-                /*height: 100%;*/
+                min-width: 850px;
                 margin-left: 15%;
                 float:left;
                 text-align: center;
@@ -53,10 +53,16 @@
 
             section{
                 width: 60%;
+                min-width: 850px;
                 min-height: 400px;
                 float: left;
                 background-color: lightYellow;
                 margin-left: 15%;
+                border:5px solid #000;
+            }
+
+            #prueba2{
+                border:2px solid pink;
             }
 
             /*aside{
@@ -67,10 +73,11 @@
             }*/
 
             footer{
+                width: 60%;
+                min-width: 850px;
                 clear: both;
                 margin-top: 20%;
                 margin-left: 15%;
-                width: 60%;
                 background-color: gray;
                 text-align: center;
             }
@@ -118,13 +125,14 @@
 /***********Estilos especificos galeria***********************/
 
             #contenedor {
-                border:1px solid;
+                border:1px solid #000;
                 /*width: 840px;
                 margin-top: 50px;
                 margin-left:180px;
                 margin-right: 10px;*/
                 overflow: hidden;
             }
+
             ul.galeriaImaxes{
                 list-style: none;
             }
@@ -203,11 +211,12 @@
 
             }
 
+            iframe {
+                float:left;
+            }
             #ubicacion{
-                position: absolute;
                 width: 300px;
-                left:50%;
-                bottom: 100px;
+                float: left;
                 font-weight: bold;
 
             }
