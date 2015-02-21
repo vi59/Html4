@@ -101,7 +101,7 @@
                 margin-bottom: 25px;
             }
 
-            #mensajeCliente {
+            #mensajedelCliente {
                 vertical-align: top;
             }
             #enviar{
@@ -208,6 +208,10 @@
 
             iframe {
                 float:left;
+                border:0;
+                width="400";
+                height="400";
+                frameborder="0";
             }
             #ubicacion{
                 width: 300px;
