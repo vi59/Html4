@@ -298,7 +298,7 @@
             }
 
             div#servicios ul li{
-                /*border:1px solid #000;*/
+                border:1px solid #000;
                 width: 35px;
                 display:inline;
                 list-style:none;
