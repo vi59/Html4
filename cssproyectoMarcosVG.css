@@ -241,3 +241,56 @@
             span.negrilla{
                 font-weight: bold;
             }
+
+/***********Estilos especificos pagina de servicios*********************++++++++++++***/
+
+            div#diapositiva{
+                margin-left: 22%;
+                float:left;
+                width: 450px;
+                height: 195px;
+                list-style: none;
+                overflow-y: hidden;
+
+            }
+
+            #diapositiva li img{
+                width: 450px;
+                height: 190px;
+
+            }
+
+            div#servicios li{
+                border:1px solid #000;
+                width: 35px;
+                display:inline;
+                list-style:none;
+                position:relative;
+                top:200px;
+                right: 250px;
+                padding-left: 10px;
+                padding-right: 15px;
+                border-radius: 55px;
+
+            }
+
+            article#descripcionServicios{
+                margin-left: inherit;
+                width:inherit;
+                float:inherit;
+                padding: 10px;
+
+
+            }
+
+            article#descripcionServicios p{
+                text-align: justify;
+            }
+
+            article#descripcionServicios table{
+                margin-left: 15px;
+                min-width: 500px;
+                text-align: justify;
+            }
+
+
