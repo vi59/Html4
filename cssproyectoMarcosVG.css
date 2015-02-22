@@ -244,7 +244,7 @@
 
 /***********Estilos especificos pagina de servicios*********************++++++++++++***/
 
-            div#diapositiva{
+            div#diapositiva ul{
                 margin-left: 22%;
                 float:left;
                 width: 450px;
@@ -254,13 +254,13 @@
 
             }
 
-            #diapositiva li img{
+            #diapositiva ul li img{
                 width: 450px;
                 height: 190px;
 
             }
 
-            div#servicios li{
+            div#servicios ul li{
                 border:1px solid #000;
                 width: 35px;
                 display:inline;
@@ -271,16 +271,13 @@
                 padding-left: 10px;
                 padding-right: 15px;
                 border-radius: 55px;
-
             }
 
             article#descripcionServicios{
-                margin-left: inherit;
+                margin-left: 22%;
                 width:inherit;
                 float:inherit;
                 padding: 10px;
-
-
             }
 
             article#descripcionServicios p{
@@ -288,7 +285,7 @@
             }
 
             article#descripcionServicios table{
-                margin-left: 15px;
+                margin-left: 20px;
                 min-width: 500px;
                 text-align: justify;
             }
