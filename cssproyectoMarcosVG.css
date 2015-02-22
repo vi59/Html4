@@ -77,6 +77,8 @@
                 text-align: center;
             }
 
+
+
 /*************Estilos especificos formulario*************/
 
 
@@ -209,9 +211,6 @@
             iframe {
                 float:left;
                 border:0;
-                width="400";
-                height="400";
-                frameborder="0";
             }
             #ubicacion{
                 width: 300px;
@@ -328,4 +327,13 @@
                 text-align: justify;
             }
 
+/***********Estilos especificos pagina de accesibilidad*********************++++++++++++***/
 
+            section#accesibilidade{
+                width: 60%;
+                text-align: justify;
+            }
+
+            section#accesibilidade a{
+                margin-left: 20px;
+            }
