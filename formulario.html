@@ -26,13 +26,13 @@
             <p><sup>*</sup>Recuerde que es obligatorio el campo E-mail.</p>
             <form action="#" method="post" accept-charset="UTF-8">
                 <label for="nombre">Nombre</label>
-                <input name="nombre" id="nombre" type="text" size="20" placeholder="Introduze aquí tu nombre..."/>
+                <input name="nombre" id="nombre" type="text" size="20" placeholder="Introduze aquí tu nombre..." autofocus required/>
                 <label for="apellidos">Apellidos</label>
-                <input name="apellidos" id="apellidos" type="text" size="60" placeholder="Introduce aquí tus apellidos..."/>
+                <input name="apellidos" id="apellidos" type="text" size="60" placeholder="Introduce aquí tus apellidos..." required/>
                 <label for="email">Email<sup>*</sup></label>
-                <input name="email" id="email" type="email" size="20"/>
+                <input name="email" id="email" type="email" size="20" required/>
                 <label for="telefono">Teléfono de contacto</label>
-                <input name="telefono" id="telefono" type="tel" size="50"/><br/>
+                <input name="telefono" id="telefono" type="tel" size="50" pattern="^[9|8|7|6]\d{8}$" required/><br/>
                 <label id="mensajedelCliente" for="mensajeCliente">Mensaje que desea enviar a la empresa</label>
                 <textarea name="mensajeCliente" id="mensajeCliente" rows="10" cols="40">Mensaje Cliente</textarea>
                 <input name="enviar" id="enviar" type="submit">
