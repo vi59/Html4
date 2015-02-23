@@ -86,6 +86,11 @@
                 margin-left: 15px;
             }
 
+            #formulario{
+                width: 500px;
+                float:left;
+            }
+
             form{
                 margin-left: 15px;
 
@@ -113,10 +118,12 @@
                 padding-right: 25px;
             }
             /*Posicionamiento relativo para colocar el codigo Bidi*/
-            #imgQr{
-                position:relative;
+            div#imgQr{
+                float:left;
+                width:250px;
+                /*position:relative;
                 top:150px;
-                right:300px;
+                right:300px;*/
             }
 
 /***********Estilos especificos galeria***********************/
