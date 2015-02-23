@@ -87,7 +87,7 @@
             }
 
             #formulario{
-                width: 500px;
+                width: 475px;
                 float:left;
             }
 
@@ -121,6 +121,8 @@
             div#imgQr{
                 float:left;
                 width:250px;
+                margin-left: 10px;
+                text-align: center;
                 /*position:relative;
                 top:150px;
                 right:300px;*/
