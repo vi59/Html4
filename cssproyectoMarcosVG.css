@@ -222,15 +222,14 @@
                 border:0;
             }
             #ubicacion{
-                width: 300px;
                 float: left;
                 font-weight: bold;
-
+                width: 300px;
             }
 
             #imagenLocalizacion{
-                margin-top: 40px;
-                margin-left: 15px;
+                float:left;
+                margin-left: 10px;
                 width:290px;
             }
 
@@ -329,11 +328,19 @@
 
 /***********Estilos especificos pagina de accesibilidad*********************++++++++++++***/
 
-            section#accesibilidade{
+            article#accesibilidade{
+                box-shadow: 10px 10px 5px #888888;
+                margin-left: 20%;
+                margin-top: 10%;
                 width: 60%;
                 text-align: justify;
+
             }
 
-            section#accesibilidade a{
-                margin-left: 20px;
+            article p{
+                padding:0px 15px 0px 15px;
+            }
+
+            article a{
+                margin-left: 300px;
             }
