@@ -221,30 +221,38 @@
                 float:left;
                 padding:10px 10px 25px 10px;
             }
-            /*Establezco a rotación de cada imaxe*/
+            /*Establezco a rotación de cada imaxe - le aplico position:relative a
+            cada una de las imagenes para que funcione la propiedad z-index
+            -con float no funciona-*/
             ul.galeriaImaxes li img.pic-1 {
                 z-index: 1;
                 transform: rotate(-10deg);
+                position: relative;
             }
             ul.galeriaImaxes li img.pic-2 {
                 z-index: 5;
                 transform: rotate(-3deg);
+                position: relative;
             }
             ul.galeriaImaxes li img.pic-3 {
                 z-index: 3;
                 transform: rotate(4deg);
+                position: relative;
             }
             ul.galeriaImaxes li img.pic-4 {
                 z-index: 4;
                 transform: rotate(14deg);
+                position: relative;
             }
             ul.galeriaImaxes li img.pic-5 {
                 z-index: 2;
                 transform: rotate(-12deg);
+                position: relative;
             }
             ul.galeriaImaxes li img.pic-6 {
                 z-index: 6;
                 transform: rotate(-10deg);
+                position: relative;
             }
             /*Escalo la imagen a un mayor tamaño cuando paso el raton por encima de ella y la traigo al frente*/
             ul.galeriaImaxes li img:hover{
