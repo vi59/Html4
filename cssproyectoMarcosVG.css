@@ -1,12 +1,15 @@
-/***********Declaro el fondo de la pagina**********************/
+/***************Declaraciones comunes a todas la paginas*****************************/
+
+            /*Especifico imagen de fondo y fuente a utilizar y tamaño por defecto*/
             body{
                 background-image: url("imaxesWeb/fondoWeb.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 font-family:novostempos;
-                font-size: 12px;
+                font-size: 14px;
             }
 
+            /*Fuente utilizada en todo el sitio*/
             @font-face {
                 font-family:novostempos;
                 src: url(fuentesWeb/Comfortaa-Regular.woff);
@@ -16,147 +19,209 @@
             .mujerFoto{
                 float:left;
                 width:20%;
-
-                /*height: 100%;*/
             }
 
             /*Posicionamiento foto cabecera hombre*/
             .hombreFoto{
                 float:right;
                 width:14%;
-
-                /*height: 100%;*/
             }
 
             /*Posicionamiento header*/
             header{
-                width:70%;
+                background-color: #EEEEED;
                 min-width: 850px;
                 margin-top: 5%;
                 margin-left: 15%;
-                text-align: center;
-                background-color: #EEEEED;
                 overflow: hidden;
+                text-align: center;
+                width:70%;
+
             }
+
+            /*Especifico los padding del encabezamiento*/
             header h1 {
                 padding-top: 2em;
                 padding-bottom: .8em;
             }
 
+            /*Establezco el formato y la posicion del menu de las paginas*/
             nav{
-                width: 70%;
+                background-color: lightYellow;
+                float:left;
                 min-width: 850px;
                 margin-left: 15%;
-                float:left;
                 text-align: center;
-                background-color: lightYellow;
-
+                width: 70%;
             }
 
+            /*Establezco sepracion entre los distintos elementos que compone el menu*/
             .Inicio,.Servicios,.Galeria,.Tarifas,.Localizacion,.Contacto{
                 padding-right: 2em;
             }
 
+            /*Establezco el formato y la posicion de la seccion principal de cada paginas*/
             section{
-                width: 70%;
+                background-color: lightYellow;
+                float: left;
+                margin-left: 15%;
                 min-width: 850px;
                 min-height: 400px;
-                float: left;
-                background-color: lightYellow;
-                margin-left: 15%;
+                width: 70%;
             }
 
-            /*aside{
-                width: 30%;
-                float:left;
-                height:400px;
-                background-color: lightGreen;
-            }*/
-
+            /*Establezco el formato y la posicion del pie de cada pagina*/
             footer{
-                width: 70%;
-                min-width: 850px;
+                background-color: gray;
                 clear: both;
+                height: auto;
                 margin-top: 20%;
                 margin-left: 15%;
-                background-color: gray;
+                min-width: 850px;
                 text-align: center;
+                width: 70%;
             }
 
+/****************Estilos especificos pagina principal - INDEX.HTML**************************/
 
-
-/*************Estilos especificos formulario*************/
-
-
-            section p{
-                margin-left: 100px;
-                width:50%;
+            /*Establezco los margenes y la justificacion para el texto de la pagina*/
+            .inicioPresentacion{
+                margin-left:20%;
+                margin-right: 10%;
+                text-align: justify;
+                width: 550px;
             }
-
-            #formulario{
-                width: 475px;
-                float:left;
+            /*Establezco la negrilla para los apartados correspondientes*/
+                span.negrilla{
+                font-weight: bold;
             }
-
-            form{
-                margin-left: 100px;
-
+            /*Establezco la posicion del contenedor de las dos imagenes de la pagina*/
+            .contenedor{
+                position:relative;
+                height: 250px;
+                width: 235px;
+                margin-left:210px;
             }
-            label{
-                display:block;
-                margin:.5em 0 0 0;
+            /*Establezco la posición del contenedor que tendrá la primera y segunda imagen*/
+            .contenedor img{
+                position:absolute;
+                left:0;
+                transition: opacity 1.5s ease-in-out;
+            }
+            /*Establezco el estado de la primera imagen al pasar por encima con el raton*/
+            .contenedor img.top:hover{
+                opacity:0;
+            }
+            /*Establezco la posicion del contenedor de la segunda imagen en la pagina*/
+            .contenedor2{
+                bottom: 10px;
+                left:350px;
+                height: 250px;
+                position:relative;
+                width: 235px;
                 overflow: hidden;
             }
 
-            input{
-                border-radius: 35px;
-            }
-            .cliente{
-                margin-bottom: 25px;
-            }
+/*******************Estilos especificos pagina Servicios************************++++++++++++***/
 
-            #mensajedelCliente {
-                vertical-align: top;
-            }
-            #enviar{
-                margin-left: 20px;
-                margin-bottom: 25px;
-                padding-left: 25px;
-                padding-right: 25px;
-            }
-            /*Posicionamiento relativo para colocar el codigo Bidi*/
-            div#imgQr{
+            /*Establezco la posicion del contenedor que tendra las imagenes y su estilo*/
+            div#diapositiva ul{
                 float:left;
-                width:250px;
-                margin-left: 10px;
-                text-align: center;
-                /*position:relative;
-                top:150px;
-                right:300px;*/
+                height: 193px;
+                width: 450px;
+                list-style: none;
+                margin-left: 15%;
+                overflow-y: hidden;
+            }
+            /*Establezco el ancho y alto de las imagenes que se visualizara*/
+            #diapositiva ul li img{
+                width: 450px;
+                height: 190px;
+            }
+            /*Establezco el margen izquierdo para ubicarla en la pagina*/
+            div#diapositiva{
+                margin-left: 100px;
+            }
+            /*Establezco el menu de anclado y su posición relativa para mover las imagenes en su contenedor*/
+            div#servicios ul li{
+                border:1px solid #000;
+                width: 35px;
+                display:inline;
+                position:relative;
+                top:200px;
+                right: 300px;
+                padding-left: 22px;
+                padding-right: 15px;
+                border-radius: 55px;
+            }
+            /*Quito los sangrados a los enlaces de ancla que sirven para pasar la imagenes*/
+            div#servicios ul li a{
+                text-decoration: none;
+            }
+            /*Establezco el ancho y el posicionamiento del contenedor que tendrá el texto*/
+            article#descripcionServicios{
+                width:auto;
+                float:left;
+                padding: 10px;
+            }
+            /*Establezco el margen izquierdo para ubicar el parrafo en la tabla y su justificacion*/
+            article#descripcionServicios p{
+                margin-left: 230px;
+                text-align: justify;
+            }
+            /*Establezco el margen izquierdo para ubicar el parrafo en la tabla y su justificacion*/
+            article#descripcionServicios table{
+                margin-left: 230px;
+                min-width: 500px;
+                text-align: justify;
             }
 
-/***********Estilos especificos galeria***********************/
+/***********Estilos especificos tarifas***********************/
 
-            #contenedor {
-                overflow: hidden;
+            /*Establezco margen izquierdo y ancho que ocupara*/
+            details#tarifas{
+                margin-left: 15%;
+                width: 500px;
             }
 
+            /*Establezco margen izquierdo,ancho que ocupara y justificacion del parrafo*/
+            details#tarifas p{
+                margin-left: 15%;
+                text-align: justify;
+                width: auto;
+            }
+            /*Establezco el margen de la tabla y el ancho que ocupara*/
+            table#tablaTarifas{
+                margin-left:  18%;
+                width: 60%;
+            }
+            /*Establezco la alineacion del encabezado de la tabla*/
+            th.encabezadoTabla{
+                text-align:left;
+            }
+            /*Establezco la alineacion de las celdas que contienen el precio de la tabla*/
+            td.precio{
+                text-align: right;
+                width: 10px;
+            }
+
+/**************************Estilos especificos galeria*****************************************/
+
+            /*Quito a los elementos de lista el estilo por defecto*/
             ul.galeriaImaxes{
                 list-style: none;
+                margin-left: 100px;
+                margin-right: 100px;
+                overflow: hidden;
             }
-
+            /*Establezco fondo,sombras,margenes y paddins internos entre fotos*/
             ul.galeriaImaxes li img{
-                float:left;
-                padding:10px 10px 25px 10px;
                 background-color: #eee;
                 box-shadow: 0px 2px 15px #333;
-                border:1px solid #000;
-                margin:25px;
-
+                float:left;
+                padding:10px 10px 25px 10px;
             }
-
             /*Establezco a rotación de cada imaxe*/
-
             ul.galeriaImaxes li img.pic-1 {
                 z-index: 1;
                 transform: rotate(-10deg);
@@ -181,176 +246,107 @@
                 z-index: 6;
                 transform: rotate(-10deg);
             }
-            /*Escalo a imaxe a un maior tamaño cando paso o cursor por riba dela e a traio o frente*/
+            /*Escalo la imagen a un mayor tamaño cuando paso el raton por encima de ella y la traigo al frente*/
             ul.galeriaImaxes li img:hover{
                 z-index: 10;
-                transform: scale(1.35);
-            }
-/***********Estilos especificos tarifas***********************/
-
-            #tarifas{
-                margin-left: 15%;
-                width: 500px;
+                transform: scale(1.20);
             }
 
-            table#tablaTarifas{
-                margin-left:  18%;
-                width: 60%;
-            }
-            th.encabezadoTabla{
-                text-align:left;
-            }
-            td.precio{
-                width: 10px;
-                text-align: right;
-            }
+/********************************Estilos especificos localizacion************************************************/
 
-/***********Estilos especificos localizacion***********************/
-
+            /*Situo la posicion del parrafo principal*/
             #localizacionEncabezado{
                 margin-left: 10%;
             }
-
-            #mapaLocalizacion{
-                width:400px;
-                min-height: 400px;
+            /*Posiciono el iframe (mapa de localizacion) y le establezco margen izquierdo y altura minima*/
+            iframe#mapaLocalizacion {
+                float:left;
                 margin-left: 10%;
                 margin-bottom: 10%;
-
+                min-height: 400px;
+                width:400px;
             }
-
-            iframe {
-                float:left;
-                border:0;
-            }
+            /*Posiciono el div que contiene los parrafos y establezco la letra a negrilla*/
             #ubicacion{
                 float: left;
                 font-weight: bold;
                 width:auto;
             }
+            /*Posiciono el parrafo  respecto a su contenedor*/
             #ubicacion p{
                 margin-left: 10px;
                 width:auto;
             }
-
+            /*Posiciono la imagen a la izquierda*/
             #imagenLocalizacion{
                 float:left;
                 margin-left: 10px;
                 width:290px;
             }
-
+            /*Establezco un zoom para la imagen cuando se pase por encima de ella*/
             #imagenLocalizacion:hover{
                 border-radius: 35px;
                 transform: scale(2);
             }
 
-/***********Estilos especificos pagina de principal - INDEX.HTML***********************/
-            .inicioPresentacion{
-                margin-left:20%;
-                margin-right: 10%;
-                width: 550px;
-                text-align: justify;
-            }
+/*******************************Estilos especificos formulario*************************************/
 
-            span.negrilla{
-                font-weight: bold;
-            }
-
-            .contenedor{
-
-            position:relative;
-            height: 250px;
-            width: 235px;
-            margin-left:210px;
-            }
-
-            .contenedor img{
-                position:absolute;
-                left:0;
-                transition: opacity 1.5s ease-in-out;
-            }
-
-            .contenedor img.top:hover{
-                opacity:0;
-            }
-
-            .contenedor2{
-
-            position:relative;
-            left:350px;
-            bottom: 10px;
-            height: 250px;
-            width: 235px;
-            overflow: hidden;
-            }
-
-
-/***********Estilos especificos pagina de Servicios*********************++++++++++++***/
-
-            div#diapositiva ul{
-                margin-left: 15%;
-                float:left;
-                width: 450px;
-                height: 193px;
-                list-style: none;
-                overflow-y: hidden;
-
-            }
-
-            #diapositiva ul li img{
-                width: 450px;
-                height: 190px;
-            }
-            div#diapositiva{
+            /*Establezco el ancho y el margen para los parrafos del formulario*/
+            section p{
                 margin-left: 100px;
+                width:50%;
             }
-
-            div#servicios ul li{
-                border:1px solid #000;
-                width: 35px;
-                display:inline;
-                list-style:none;
-                position:relative;
-                top:200px;
-                right: 250px;
-                padding-left: 22px;
-                padding-right: 15px;
-                border-radius: 55px;
-            }
-
-            article#descripcionServicios{
-                /*margin-left: 15%;*/
-                width:auto;
+            /*Establezco el ancho y el posicionamiento del formulario en la pagina*/
+            #formulario{
                 float:left;
-                padding: 10px;
+                margin-left: 100px;
+                width: 475px;
+            }
+            /*Establezco las etiquetas del formulario en un bloque para que se muestre en una sola columna*/
+            label{
+                display:block;
             }
 
-            article#descripcionServicios p{
-                margin-left: 200px;
-                text-align: justify;
+            /*Le doy un borde redondeado a las casillas donde se introducen los datos - input*/
+            input{
+                border-radius: 35px;
             }
 
-            article#descripcionServicios table{
-                margin-left: 200px;
-                min-width: 500px;
-                text-align: justify;
+            /*Establezco la alineacion para el campo textarea del formulario respecto al boton enviar*/
+            #mensajedelCliente {
+                vertical-align: top;
             }
 
-/***********Estilos especificos pagina de accesibilidad*********************++++++++++++***/
+            /*Establezco dimensiones para el boton enviar*/
+            #enviar{
+                margin-left: 20px;
+                margin-bottom: 25px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            /*Posicionamiento flotante para colocar el codigo QR*/
+            div#imgQr{
+                float:left;
+                margin-left: 10px;
+                text-align: center;
+                width:250px;
+            }
 
+/********************Estilos especificos pagina de accesibilidad******************************++++++++++++***/
+
+            /*Establezco a través de los margenes la ubicación del texto y su estilo*/
             article#accesibilidade{
                 box-shadow: 10px 10px 5px #888888;
                 margin-left: 20%;
                 margin-top: 10%;
                 width: 60%;
                 text-align: justify;
-
             }
-
+            /*Establezco el padding de los parrafos*/
             article p{
                 padding:0px 15px 0px 15px;
             }
-
+            /*Establezco la ubicacion de la imagen de la W3C en el article*/
             article a{
                 margin-left: 300px;
             }
