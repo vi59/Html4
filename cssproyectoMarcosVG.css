@@ -210,8 +210,8 @@
             /*Quito a los elementos de lista el estilo por defecto*/
             ul.galeriaImaxes{
                 list-style: none;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
                 overflow: hidden;
             }
             /*Establezco fondo,sombras,margenes y paddins internos entre fotos*/
