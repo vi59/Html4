@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!--Encabezamiento que figurara en todas las paginas-consta de titulo y descripcion codigo caracteres y palabras clave, descripción y referencia
+    a la hoja de estilos-->
     <head>
         <title>PELUQUEIRA NOVOS TEMPOS</title>
         <meta charset="utf-8">
@@ -7,7 +9,10 @@
         <meta name="description" content="Novos Tempos Peluqueria y estetica en Coruna y Santiago de Compostela. Salones de belleza."/>
         <link rel="stylesheet" href="cssproyectoMarcosVG.css">
     </head>
+    <!--El body contendra un fondo -se define en el css- un header para la cabecera, un nav para el menu, un section para los contenidos princpales
+    y footer para la dirección y enlace a la validación de en el W3C-->
     <body>
+        <!--El header, cabecera donde figuraran las dos imagenes y la descripcion de la empresa -->
         <header>
             <figure>
                 <img class="mujerFoto" src="imaxesWeb/mujerHeader.png" alt="Foto Mujer">
@@ -15,25 +20,49 @@
             </figure>
             <h1>PELUQUERIA NOVOS TEMPOS</h1>
         </header>
+        <!--El nav, constara del menu de navegación que enlazara a las distintas páginas-->
         <nav>
-            <p><a class="Inicio" href="index.html">Inicio</a>|<a class="Servicios" href="servicios.html">Servicios</a>|<a class="Tarifas" href="tarifas.html">Tarifas</a>|<a class="Galeria" href="galeria.html">Galeria</a>|<a class="Localizacion" href="localizacion.html">Localización</a>|<a class="Contacto" href="formulario.html">Contacto</a></p>
+            <p>
+                <a class="Inicio" href="index.html">Inicio</a>|
+                <a class="Servicios" href="servicios.html">Servicios</a>|
+                <a class="Tarifas" href="tarifas.html">Tarifas</a>|
+                <a class="Galeria" href="galeria.html">Galeria</a>|
+                <a class="Localizacion" href="localizacion.html">Localización</a>|
+                <a class="Contacto" href="formulario.html">Contacto</a>
+            </p>
         </nav>
+        <!--En este section estarán los contenidos principales de la página-->
         <section>
-            <h4 id="localizacionEncabezado">Donde estamos: Novos Tempos Rua Ensinanza 13 B - Santiago - A Coruña. Telefono: 981570102</h4>
+            <article>
+                <h4 id="localizacionEncabezado">
+                    Donde estamos: Novos Tempos Rua Ensinanza 13 B - Santiago - A Coruña. Telefono: 981570102
+                </h4>
+            </article>
+
             <article>
                 <iframe id="mapaLocalizacion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2923.754955347032!2d-8.541539999999998!3d42.878015999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe4653f8cb37%3A0x6d9fefa8cbfc724c!2sNovos+Tempos!5e0!3m2!1ses!2ses!4v1424429248287" width="400" height="400">
                 </iframe>
             </article>
+
+            <article>
             <div id=ubicacion>
                 <p> Nuestro horario es de Lunes a Viernes:</p>
                 <p> De 09:30 a 20:00 ininterrumpido</p>
                 <p> Sábados de 09:00 a 14:00</p>
                 <p> Tarifas especiales para mayores de 65</p>
             </div>
-            <figure>
-                <img id="imagenLocalizacion" src="imaxesWeb/imgLoc1.jpg" alt="consejo peluquero">
-            </figure>
+            </article>
+
+            <aside>
+                <figure>
+                    <img id="imagenLocalizacion" src="imaxesWeb/imgLoc1.jpg" alt="consejo peluquero">
+                </figure>
+            </aside>
+
         </section>
+
+        <!--Pie de pagina que contendra los datos de la dirección de la empresa así como enlace a la validación del W3C
+        en una etiqueta address-->
         <footer>
             <address>
                 <p>Peluqueria Novos Tempos C/Ensinanza,nº 13 - Baixo - Santiago de Compostela - 981570102 &nbsp;&nbsp;
