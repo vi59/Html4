@@ -36,23 +36,34 @@
             <article>
                 <p>Rellene el siguiente formulario para ponerse en contacto con nosotros.</p>
                 <p><sup>*</sup>Recuerde que es obligatorio cubrir correctamente los campos.</p>
-                <fieldset id="formulario">
-                    <legend><h3>CONTACTO</h3></legend>
+
                 <form  action="ejemploPost.php" method="post" accept-charset="UTF-8">
+
+                    <fieldset id="formulario">
+                    <legend><h3>CONTACTO</h3></legend>
+
                     <label for="nombre">Nombre</label>
                     <input name="nombre" id="nombre" type="text" size="26" placeholder="Introduzca aquí su nombre..." autofocus required/>
+
                     <label for="apellidos">Apellidos</label>
                     <input name="apellidos" id="apellidos" type="text" size="40" placeholder="Introduzca aquí sus apellidos..." required/>
+
                     <label for="email">Email</label>
                     <input name="email" id="email" type="email" size="20" required/>
+
                     <label for="telefono">Teléfono de contacto</label>
                     <input name="telefono" id="telefono" type="tel" size="15" pattern="^[9|8|7|6]\d{8}$" required/><br/>
+
                     <label id="mensajedelCliente" for="mensajeCliente">Mensaje que desea enviar a la empresa</label>
                     <textarea name="mensajeCliente" id="mensajeCliente" rows="10" cols="40">Mensaje Cliente</textarea>
+
                     <input name="enviar" id="enviar" type="submit">
+
+                    </fieldset>
+
                 </form>
-                </fieldset>
             </article>
+
             <aside>
                 <div id="imgQr">
                     <h2>CODIGO QR</h2>
@@ -61,7 +72,9 @@
                     </figure>
                 </div>
             </aside>
+
         </section>
+
         <!--Pie de pagina que contendra los datos de la dirección de la empresa así como enlace a la validación del W3C
         en una etiqueta address-->
         <footer>
