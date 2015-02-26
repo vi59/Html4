@@ -56,8 +56,8 @@
             }
 
             /*Establezco sepracion entre los distintos elementos que compone el menu*/
-            .Inicio,.Servicios,.Galeria,.Tarifas,.Localizacion,.Contacto{
-                padding-right: 2em;
+            .Inicio,.Servicios,.Galeria,.Peinados,.Tarifas,.Localizacion,.Contacto{
+                padding-right: 1em;
             }
 
             /*Establezco el formato y la posicion de la seccion principal de cada paginas*/
@@ -260,6 +260,17 @@
                 transform: scale(1.20);
             }
 
+/********************************Estilos especificos Peinados************************************************/
+
+            /*Establezco el video de la pagina en posicion relativa y centro el texto con respecto al video*/
+
+            div#videoTendencia{
+                margin:20px auto;
+                width: 500px;
+                position:relative;
+                text-align: center;
+            }
+
 /********************************Estilos especificos localizacion************************************************/
 
             /*Situo la posicion del parrafo principal*/
@@ -288,6 +299,7 @@
             /*Posiciono la imagen a la izquierda*/
             #imagenLocalizacion{
                 float:left;
+                margin-top: 120px;
                 margin-left: 10px;
                 width:290px;
             }
@@ -359,3 +371,8 @@
             article a{
                 margin-left: 300px;
             }
+
+
+
+
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
     <!--Encabezamiento que figurara en todas las paginas-consta de titulo y descripcion codigo caracteres y palabras clave, descripción y referencia
     a la hoja de estilos-->
     <head>
@@ -10,10 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="cssproyectoMarcosVG.css">
     </head>
-    <!--El body contendra un fondo -se define en el css- un header para la cabecera, un nav para el menu, un section para los contenidos principales
-    y footer para la dirección y enlace a la validación en el W3C-->
+     <!-- -->
+    <!--El body contendra un fondo -se define en el css- un header para la cabecera, un nav para el menu, un section para los contenidos princpales
+    y footer para la dirección y enlace a la validación de en el W3C-->
     <body>
-        <!--El header, cabecera donde figuraran las dos imagenes y la descripcion de la empresa -->
+    <!--El header, cabecera donde figuraran las dos imagenes y la descripcion de la empresa -->
         <header>
             <figure>
                 <img class="mujerFoto" src="imaxesWeb/mujerHeader.png" alt="Foto Mujer">
@@ -33,50 +35,17 @@
                 <a class="Contacto" href="formulario.html">Contacto</a>
             </p>
         </nav>
-        <!--En este section estarán los contenidos principales de la página-->
+    <!--En este section estarán los contenidos principales de la página-->
         <section>
-            <article>
-                <p>Rellene el siguiente formulario para ponerse en contacto con nosotros.</p>
-                <p><sup>*</sup>Recuerde que es obligatorio cubrir correctamente los campos.</p>
-
-                <form  action="ejemploPost.php" method="post" accept-charset="UTF-8">
-
-                    <fieldset id="formulario">
-                    <legend><h3>CONTACTO</h3></legend>
-
-                    <label for="nombre">Nombre</label>
-                    <input name="nombre" id="nombre" type="text" size="26" placeholder="Introduzca aquí su nombre..." autofocus required/>
-
-                    <label for="apellidos">Apellidos</label>
-                    <input name="apellidos" id="apellidos" type="text" size="40" placeholder="Introduzca aquí sus apellidos..." required/>
-
-                    <label for="email">Email</label>
-                    <input name="email" id="email" type="email" size="20" required/>
-
-                    <label for="telefono">Teléfono de contacto</label>
-                    <input name="telefono" id="telefono" type="tel" size="15" pattern="^[9|8|7|6]\d{8}$" required/><br/>
-
-                    <label id="mensajedelCliente" for="mensajeCliente">Mensaje que desea enviar a la empresa</label>
-                    <textarea name="mensajeCliente" id="mensajeCliente" rows="10" cols="40">Mensaje Cliente</textarea>
-
-                    <input name="enviar" id="enviar" type="submit">
-
-                    </fieldset>
-
-                </form>
-            </article>
-
             <aside>
-                <div id="imgQr">
-                    <h2>CODIGO QR</h2>
-                    <figure>
-                        <img  src="imaxesWeb/novostemposQR.png" alt="Código QR PELUQUERIA NOVOS TEMPOS SANTIAGO DE COMPOSTELA"/>
-                    </figure>
-                </div>
+                    <div id="videoTendencia">
+                        <video poster="videos/poster2015.png" width="500" loop controls>
+                            <source src="Videos/CortesPeloMujer2015.webm" type="video/webm">
+                        </video>
+                        <h2>TENDENCIAS DE PEINADOS PARA EL 2015</h2>
+                    </div>
             </aside>
-
         </section>
-
         <!--Pie de pagina que contendra los datos de la dirección de la empresa así como enlace a la validación del W3C
         en una etiqueta address-->
         <footer>
